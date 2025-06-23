@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --wood-50: #fdf8f3;
+  --wood-100: #f9efe3;
+  --wood-200: #f1dcc4;
+  --wood-300: #e7c299;
+  --wood-400: #dba36c;
+  --wood-500: #d1894b;
+  --wood-600: #c3753f;
+  --wood-700: #a25f36;
+  --wood-800: #824e31;
+  --wood-900: #6a422a;
+  --cream-300: #f8e5b3;
+  --cream-400: #f3d487;
+}
+
+.dark {
+  --wood-50: #6a422a;
+  --wood-100: #824e31;
+  --wood-200: #a25f36;
+  --wood-300: #c3753f;
+  --wood-400: #d1894b;
+  --wood-500: #dba36c;
+  --wood-600: #e7c299;
+  --wood-700: #f1dcc4;
+  --wood-800: #f9efe3;
+  --wood-900: #fdf8f3;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: var(--wood-50);
+  color: var(--wood-900);
+}
+
+.dark body {
+  background-color: var(--wood-900);
+  color: var(--wood-50);
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+.bg-wood-gradient {
+  background: linear-gradient(135deg, var(--wood-600), var(--wood-800));
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
